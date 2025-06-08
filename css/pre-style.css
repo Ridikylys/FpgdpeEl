@@ -1,0 +1,510 @@
+@charset "UTF-8";
+/************************************************************
+				  NULL STYLE
+************************************************************/
+/*Обнуление стилей*/
+@import url("https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------------------------------------*/
+/************************************************************
+                	FONTS
+************************************************************/
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("O"), url("../fonts/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("O"), url("../fonts/MontserratSemiBold.woff") format("woff"), url("../fonts/MontserratSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: local("O"), url("../fonts/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("O"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("O"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+/************************************************************
+                	MIXIN
+************************************************************/
+/************************************************************
+                	VARIABLES
+************************************************************/
+/*---Пример использования миксинов-----------------
+---1---Миксин адаптива шрифта (размер по макету, размер по 320px)
+@include adaptive-font(40,24);
+-----------------------------------------------------
+
+//Чтобы заработал ibg
+	height: 100%;
+	display: block;
+	position: relative;
+
+/************************************************************
+               		 MAIN CODE
+************************************************************/
+body {
+  font-family: "Roboto", sans-serif, "PT Serif";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+.wrapper-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.item {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.item__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+@media (max-width: 1182px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  ._container {
+    max-width: 750px;
+  }
+}
+._container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/************************************************************
+               		 HEADER
+************************************************************/
+.header {
+  padding: 12px 0;
+  position: relative;
+  z-index: 50;
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 35px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 66.667%;
+          flex: 1 1 66.667%;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 875px;
+}
+.menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__link {
+  font-family: "Chocolate Classical Sans", sans-serif, "PT Serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+}
+.menu__link-active {
+  color: #5e9ed5;
+}
+
+.orderBtn__text {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 17.5px 17.25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: radial-gradient(113.41% 117.29% at -13.39% 80%, #fff 0%, #b69e5e 100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.orderBtn__text:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/************************************************************
+               		 STATUS-BLOCK
+************************************************************/
+.main-screen {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
+  position: relative;
+}
+.main-screen__bg {
+  position: absolute;
+  width: 100%;
+  height: 185%;
+  top: -11em;
+  left: 0;
+}
+
+.main-screen-content {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-screen-content__logo {
+  position: relative;
+  margin-top: 135px;
+}
+.main-screen-content__logo img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  z-index: 6;
+}
+.main-screen-content__logo-first-line img {
+  position: absolute;
+  z-index: 5;
+  left: -3em;
+  top: -11.7em;
+  width: 67em;
+  height: 100%;
+}
+.main-screen-content__logo-second-line img {
+  position: absolute;
+  z-index: 5;
+  width: 50em;
+  height: 100%;
+  top: 8em;
+  left: 22em;
+}
+.main-screen-content__img {
+  position: relative;
+  max-width: 320px;
+  left: 3em;
+  top: 3em;
+  z-index: 5;
+}
+
+.company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 150px 0px 0px 15px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 640px;
+  max-height: 120px;
+}
+.company__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: white;
+}
+.company__name-sec {
+  font-family: "Chocolate Classical Sans", sans-serif, "PT Serif";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #b69e5e;
+}
+.company__disk {
+  font-family: "Chocolate Classical Sans", sans-serif, "PT Serif";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  max-width: 430px;
+  margin-top: 25px;
+}
+
+.about-fpg {
+  width: 100%;
+  height: 800px;
+  background-color: #222436;
+  background: #222436;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.about-fpg-left {
+  position: relative;
+}
+.about-fpg-left__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.about-fpg-left__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: white;
+  max-width: 404px;
+  position: relative;
+  left: 2.5em;
+  top: -10.6em;
+}
+
+.right-main {
+  font-family: "Chocolate Classical Sans", sans-serif, "PT Serif";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 58em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-left: 2em;
+}
+
+.right-main-one {
+  max-width: 365px;
+}
+
+.right-main-two {
+  max-width: 360px;
+}
+.right-main-two span {
+  color: #5e9ed5;
+}
+
+.right-main-three {
+  max-width: 320px;
+}
+
+.right-main-four {
+  max-width: 360px;
+}
+
+.grafic-main-line {
+  position: relative;
+  top: -28em;
+}

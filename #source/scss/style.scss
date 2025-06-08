@@ -1,0 +1,405 @@
+/************************************************************
+				  NULL STYLE
+************************************************************/
+@import "_nullstyle";
+
+/************************************************************
+                	FONTS
+************************************************************/
+@import "fonts";
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap');
+
+
+/************************************************************
+                	MIXIN
+************************************************************/
+@import "_mix-adaptiv-font";
+
+/************************************************************
+                	VARIABLES
+************************************************************/
+$maxWidth: 1170;
+
+/*---Пример использования миксинов-----------------
+---1---Миксин адаптива шрифта (размер по макету, размер по 320px)
+@include adaptive-font(40,24);
+-----------------------------------------------------
+
+//Чтобы заработал ibg
+	height: 100%;
+	display: block;
+	position: relative;
+
+/************************************************************
+               		 MAIN CODE
+************************************************************/
+
+//------Общие параметры---------------------------------------------
+body {
+	font-family: 'Roboto', sans-serif, 'PT Serif';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 15px;
+	background-color: #ffffff;
+	color: #000;
+}
+
+.wrapper {
+	overflow: hidden;
+	&-settings {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		overflow: hidden;
+	}
+	
+}
+//--------------------------------------------------
+
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	
+	&-settings {
+		//display: flex;
+		//flex-direction: column;
+		//min-height: 100%;
+	}
+}
+//-----------Технический класс для изображений бэкграунда--------
+.ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+	img {
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.item {
+	//Чтобы заработал ibg
+	height: 100%;
+	display: block;
+	position: relative;
+	&__image {
+		//Чтобы заработал ibg
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+//---------------------------------------------------------------
+
+._container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+	@media (max-width:1182px) {
+		max-width: 970px;
+	}
+	@media (max-width:992px) {
+		max-width: 750px;
+	}
+
+	&-2 {
+		display: flex;
+	}
+}
+/************************************************************
+               		 HEADER
+************************************************************/
+.header {
+
+	padding: 12px 0;
+	position: relative;
+	z-index: 50;
+
+	@media (max-width:992px) {
+		padding: 35px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 10px 0;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		
+	}
+
+	&__menu {
+		flex: 1 1 66.667%;
+	}
+}
+
+.menu {
+
+	&__icon {
+	}
+
+	&__body {
+		
+	}
+ 
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 875px;
+		 
+	}
+ 
+	li {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__link {
+		font-family: "Chocolate Classical Sans", sans-serif, 'PT Serif';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		color: white;
+		&-active {
+			color: #5e9ed5;
+		}
+	}
+}
+
+.orderBtn {
+	
+	
+	&__text {
+		display: inline-block;
+		border: 1px solid black;
+		border-radius: 3px;
+		padding: 17.5px 17.25px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		color: black;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+		background: radial-gradient(113.41% 117.29% at -13.39% 80%, #fff 0%, #b69e5e 100%);
+		transition: all 0.5s ease;
+
+			&:hover {
+			transition: all 0.5s ease;
+			}
+	}
+}
+
+
+/************************************************************
+               		 STATUS-BLOCK
+************************************************************/
+
+.main-screen {
+	flex: 1 0 70%;
+	position: relative;
+	//main-screen__bg
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 185%;
+    	top: -11em;
+		left: 0;
+	}
+}
+
+
+.main-screen-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+		
+		&__logo {
+
+			position: relative;
+			margin-top: 135px;
+
+			img {
+				height: 100px;
+				width: 100px;
+				position: relative;
+  				z-index: 6;
+			}
+
+			&-first-line {
+				img {
+					position: absolute;
+					z-index: 5;
+					left: -3em;
+    				top: -11.7em;
+					width: 67em;
+					height: 100%;
+				}
+			}
+
+			&-second-line {
+				img {
+					position: absolute;
+					z-index: 5;
+					width: 50em;
+					height: 100%;
+					top: 8em;
+					left: 22em;
+				}
+			}
+		}
+
+		// .main-screen-content__company
+
+		&__company {
+		}
+
+		// .main-screen-content__img
+
+		&__img {
+			position: relative;
+    		max-width: 320px;
+    		left: 3em;
+    		top: 3em;
+			z-index: 5;
+		}
+}
+.company {
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 150px 0px 0px 15px;
+	justify-content: space-evenly;
+    max-width: 640px;
+	max-height: 120px;
+
+		&__name {
+			font-family: "Roboto", sans-serif;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 1.2;
+			color: white;
+		}
+
+		// .company__name-sec
+
+		&__name-sec {
+			font-family: "Chocolate Classical Sans", sans-serif, 'PT Serif';
+			font-weight: 400;
+			font-size: 36px;
+			line-height: 1.5;
+			color: #b69e5e;
+		}
+
+		// .company__disk
+
+		&__disk {
+			font-family: "Chocolate Classical Sans", sans-serif, 'PT Serif';
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 1.5;
+			color: #fff;
+			max-width: 430px;
+			margin-top: 25px;
+		}
+}
+
+.about-fpg {
+	width: 100%;
+	height: 800px;
+	background-color: #222436;
+	background: #222436;
+	//flex: 1 0 100%;
+	//top: 187px;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.about-fpg-left {
+	position: relative;
+    //left: -32%;
+		// .about-fpg-left__bg
+
+		&__bg {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		// .about-fpg-left__text
+
+		&__text {
+			font-family: "Roboto", sans-serif;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 120%;
+			color: white;
+			max-width: 404px;
+			position: relative;
+			left: 2.5em;
+    		top: -10.6em;
+		}
+}
+.about-fpg-right {
+}
+.right {
+
+}
+.right-main {
+	font-family: "Chocolate Classical Sans", sans-serif, 'PT Serif';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+    max-width: 58em;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    height: 100%;
+	margin-left: 2em;
+}
+.right-main-one {
+	max-width: 365px;
+}
+.right-main-two {
+	max-width: 360px;
+	span {
+		color: #5e9ed5;
+	}
+}
+.right-main-three {
+	max-width: 320px;
+}
+.right-main-four {
+	max-width: 360px;
+}
+.right-main-grafic {
+}
+
+
+.grafic {
+}
+.grafic-main-line {
+	position: relative;
+	top: -28em;
+}
+
