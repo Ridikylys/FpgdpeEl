@@ -157,6 +157,7 @@ body {
   line-height: 15px;
   background-color: #ffffff;
   color: #000;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -200,7 +201,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  opacity: 0.6;
   visibility: hidden;
 }
 
@@ -244,7 +245,7 @@ body {
                		 HEADER
 ************************************************************/
 .header {
-  padding: 12px 0;
+  padding: 35px 0;
   position: relative;
   z-index: 50;
 }
@@ -331,17 +332,14 @@ body {
                		 STATUS-BLOCK
 ************************************************************/
 .main-screen {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 70%;
-          flex: 1 0 70%;
   position: relative;
 }
 .main-screen__bg {
   position: absolute;
-  width: 100%;
+  width: 105%;
   height: 185%;
-  top: -11em;
-  left: 0;
+  top: -16em;
+  left: -2em;
 }
 
 .main-screen-content {
@@ -410,7 +408,7 @@ body {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.5;
-  color: #b69e5e;
+  color: #ffb900;
 }
 .company__disk {
   font-family: "Chocolate Classical Sans", sans-serif, "PT Serif";
@@ -427,6 +425,7 @@ body {
   height: 800px;
   background-color: #222436;
   background: #222436;
+  top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,10 +486,16 @@ body {
 
 .right-main-one {
   max-width: 365px;
+  position: relative;
+  top: 65px;
+  left: -22px;
 }
 
 .right-main-two {
   max-width: 360px;
+  position: relative;
+  top: -50px;
+  left: -90px;
 }
 .right-main-two span {
   color: #5e9ed5;
@@ -498,13 +503,18 @@ body {
 
 .right-main-three {
   max-width: 320px;
+  position: relative;
+  top: -25px;
+  left: -65px;
 }
 
 .right-main-four {
   max-width: 360px;
+  position: relative;
+  top: 45px;
+  left: -130px;
 }
 
 .grafic-main-line {
-  position: relative;
-  top: -28em;
+  position: absolute;
 }
