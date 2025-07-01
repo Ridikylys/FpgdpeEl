@@ -121,6 +121,17 @@ body {
 	&-2 {
 		display: flex;
 	}
+
+	&-about {
+		display: flex;
+		position: relative;
+		left: -90px;
+		max-width: 1360px;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 100%;
+		padding: 0px 15px;
+	}
 }
 /************************************************************
                		 HEADER
@@ -323,7 +334,7 @@ body {
 }
 
 .about-fpg {
-	width: 100%;
+	width: 101%;
 	height: 800px;
 	background-color: #222436;
 	background: #222436;
@@ -370,25 +381,27 @@ body {
 	text-align: center;
 	color: #fff;
 	display: flex;
-	flex-wrap: wrap;
-    max-width: 58em;
-    justify-content: space-evenly;
-    align-content: space-around;
-    align-items: center;
-    height: 100%;
-	margin-left: 2em;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	&-top, &-bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-middle {
+		max-width: 788px;
+	}
 }
 .right-main-one {
 	max-width: 365px;
 	position: relative;
-    top: 65px;
-    left: -22px;
+    top: 105px;
+    left: 40px;
 }
 .right-main-two {
 	max-width: 360px;
 	position: relative;
-    top: -50px;
-    left: -90px;
 	span {
 		color: #5e9ed5;
 	}
@@ -396,14 +409,13 @@ body {
 .right-main-three {
 	max-width: 320px;
 	position: relative;
-    top: -25px;
-    left: -65px;
+    top: -70px;
+    left: -20px;
 }
 .right-main-four {
 	max-width: 360px;
 	position: relative;
-    top: 45px;
-    left: -130px;
+    left: -90px;
 }
 .right-main-grafic {
 }
@@ -412,7 +424,7 @@ body {
 .grafic {
 }
 .grafic-main-line {
-	position: absolute;
+	max-width: 100%;
 	
 }
 
