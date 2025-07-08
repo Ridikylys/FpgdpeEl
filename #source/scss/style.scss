@@ -334,7 +334,7 @@ body {
 }
 
 .about-fpg {
-	width: 101%;
+	width: 102%;
 	height: 800px;
 	background-color: #222436;
 	background: #222436;
@@ -428,3 +428,113 @@ body {
 	
 }
 
+.readyAndTry {
+	position: relative;
+	top: 55px;
+		// .readyAndTry__bg
+
+	&__bg {
+		position: absolute;
+		width: 102%;
+		height: 1364px;
+		filter: blur(5px);
+		left: -10px;
+		top: -5px;
+	}
+
+	&-main {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		//justify-content: center;
+		align-items: center;
+	
+		&-readyProduct {
+		
+		}
+	}
+}
+
+.readyProduct {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 75px;
+
+	&-title {
+		font-family: "Roboto", sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 120%;
+		color: #fff;
+	}
+	
+	&-subtitle {
+		font-family: "Chocolate Classical Sans", sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		text-align: center;
+		color: #fff;
+		padding-top: 10px;
+		max-width: 525px;
+	}
+	
+	&-cards {
+		margin-top: 100px;
+		max-width: 1200px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.title-readyProduct {
+}
+.subtitle-readyProduct {
+}
+.cardsReady {
+
+	width: 230px;
+	height: 365px;
+	border: 1px solid rgba(94, 158, 213, 0.5);
+	backdrop-filter: blur(4px);
+	background: rgba(94, 158, 213, 0.38);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	
+
+	&-digmat {
+		
+	}
+
+	&-img {
+	
+		&-digmat {
+		
+		}
+	}
+
+	&-name {
+
+		font-family: "Chocolate Classical Sans", sans-serif;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 130%;
+		color: #5e9ed5;
+		
+		&-digmat {
+			margin-top: -17px;
+		}
+
+		&-second {
+			font-size: 20px;
+			line-height: 140%;
+			margin-top: 10px;
+		}
+	}
+}
