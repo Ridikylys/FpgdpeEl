@@ -562,7 +562,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.readyProduct {
+.readyAndTry-main-readyProduct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,6 +575,7 @@ body {
           align-items: center;
   padding-top: 75px;
 }
+
 .readyProduct-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -590,11 +591,11 @@ body {
   text-align: center;
   color: #fff;
   padding-top: 10px;
-  max-width: 525px;
+  max-width: 600px;
 }
 .readyProduct-cards {
-  margin-top: 100px;
-  max-width: 1200px;
+  margin-top: 70px;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,6 +605,17 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subtitle-tryProduct {
+  width: 600px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cardsReady {
@@ -623,9 +635,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cardsReady-img {
+  padding-top: 20px;
 }
 .cardsReady-name {
   font-family: "Chocolate Classical Sans", sans-serif;
@@ -636,9 +651,14 @@ body {
 }
 .cardsReady-name-digmat {
   margin-top: -17px;
+  padding-bottom: 20px;
 }
 .cardsReady-name-second {
   font-size: 20px;
   line-height: 140%;
   margin-top: 10px;
+}
+
+.tryProduct {
+  padding-top: 120px;
 }
