@@ -483,7 +483,7 @@ body {
 	
 	&-cards {
 		margin-top: 70px;
-		width: 1200px;
+		width: 1170px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -566,4 +566,172 @@ body {
 
 .tryProduct {
 	padding-top: 120px;
+
+	&-noneBlock {
+		height: 118px;
+	}
+}
+
+.advantages {
+
+	height: 800px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+
+	&_container {
+		position: relative;
+		left: -1%;
+	}
+	
+
+	&-bg {
+		background: #222436;
+		width: 102%;
+		position: relative;
+		height: 707px;
+	}
+	
+	&-title {
+		padding-top: 88px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 120%;
+		text-align: center;
+		color: #fff;
+	}
+
+	&-main {
+		padding-top: 83px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-card {
+		width: 370px;
+		height: 370px;
+		display: flex;
+		flex-direction: column;
+		//justify-content: center;
+		align-items: center;
+		border: 3px solid rgba(101, 164, 219, 0.08);
+		border-radius: 3px;
+
+		&-img {
+			
+			padding-top: 80px;
+
+			&-img {
+			
+			}
+		}
+
+		&-title {
+			font-family: "Roboto", sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 140%;
+			color: #5e9ed5;
+			padding-top: 14px;
+		}
+
+		&-subtitle {
+			padding-top: 14px;
+			width: 332px;
+			font-family: "Chocolate Classical Sans", sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			text-align: center;
+			color: #fff;
+		}
+	}
+
+
+}
+
+.title-advantages {
+}
+
+.left {
+
+	&-card {
+	
+	}
+
+	&-img {
+	
+	}
+
+	&-title {
+
+	}
+
+	&-subtitle {
+		
+	}
+}
+
+.ruProduct {
+
+	&-bg {
+		height: 700px;
+		background: #e7e7e7;
+	}
+
+	&-main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&-left {
+		padding-top: 137px;
+		display: flex;
+		flex-direction: column;
+		max-width: 570px;
+
+		&-ico {
+
+			&-img {
+
+			}
+		}
+
+		&-title {
+			font-family: "Roboto", sans-serif;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 120%;
+			color: #000;
+			padding-top: 21px;
+		}
+
+		&-subtitle {
+			font-family: "Chocolate Classical Sans", sans-serif;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			color: #000;
+			padding-top: 21px;
+		}
+
+		&-btn {
+			padding-top: 40px;
+		}
+
+	
+	}
+
+	&-right {
+	
+		&-img {
+			padding-top: 120px;
+			width: 100%;
+		}
+	}
+
 }
