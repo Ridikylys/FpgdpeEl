@@ -570,10 +570,10 @@ body {
   position: absolute;
   width: 102%;
   height: 1640px;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
   left: -10px;
-  top: -5px;
+  top: 0px;
 }
 .readyAndTry-main {
   position: relative;
@@ -891,13 +891,15 @@ body {
 }
 .inTouch-main-body-img {
   background-image: url("../img/aboutuspng.svg");
-  width: 100%;
+  width: 1200px;
   height: 500px;
   background-repeat: no-repeat;
   position: absolute;
   background-size: 25%;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 140px;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
 }
 .inTouch-main-body-text {
   font-size: 16px;
