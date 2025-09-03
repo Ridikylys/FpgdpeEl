@@ -60,7 +60,7 @@ body {
 .page {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 112%;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -1071,7 +1071,7 @@ body {
 	&-main {
 	
 		&-flex {
-			padding-top: 80px;
+			padding-top: 35px;
 			display: flex;
 			justify-content: space-between;
 
@@ -1095,6 +1095,11 @@ body {
 
 .left-main {
 
+	display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: space-between;
+
 	&-title {
 		font-family: "Roboto", sans-serif;
 		font-weight: 700;
@@ -1111,6 +1116,7 @@ body {
 		line-height: 200%;
 		color: white;
 		max-width: 620px;
+		text-align: justify;
 
 		&-start {
 			color: #efc03f;
@@ -1172,7 +1178,16 @@ body {
 
 .whyBpvv {
 
-	padding-top: 120px;
+	&-title {
+		font-family: "Roboto", sans-serif;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 150%;
+		color: white;
+		text-align: center;
+		margin-top: 50px;
+	}
+	//padding-top: 120px;
 	background: #222436;
 
 	&-flex {
@@ -1313,4 +1328,46 @@ table.iksweb th {
 
 .hidden {
 	display: none;
+}
+
+//CAROUSEL
+#myCarousel {
+	--f-arrow-pos: 10px;
+	--f-arrow-width: 38px;
+	--f-arrow-height: 38px;
+	--f-arrow-svg-width: 16px;
+	--f-arrow-svg-height: 16px;
+	--f-arrow-svg-stroke-width: 2.5;
+	--f-arrow-color: #475569;
+	--f-arrow-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+	--f-arrow-border-radius: 50%;
+	--f-arrow-bg: #fff;
+	--f-arrow-hover-bg: #f9f9f9;
+	--f-arrow-active-bg: #f0f0f0;
+	--f-thumb-width: 50px;
+	
+
+}
+
+#myCarousel .f-carousel__slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#myCarousel .f-carousel__slide img {
+	max-width: 100%;
+	height: auto;
+}
+
+.f-thumbs__viewport {
+	margin: 15px;
+}
+
+.bpvv {
+	--f-thumb-width: 50px;
+    --f-thumb-height: 75px;
+	--f-thumbs-padding-y: 15px;
+	--f-thumbs-gap: 15px;
 }

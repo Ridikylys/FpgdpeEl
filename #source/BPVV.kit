@@ -4,6 +4,9 @@
 		<title>Донпромэнерго Электроника</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<link rel="stylesheet" href="css/pre-style.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		<link rel="stylesheet" href="css/carousel.arrows.css">
+		<link rel="stylesheet" href="css/carousel.thumbs.css">
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="img/site_logo.ico">
 	</head>
@@ -51,6 +54,8 @@
 										<div class="left-main-title">БПВВ-1 (BP-220-02A)</div>
 										<div class="left-main-text">
 											<span class="left-main-text-start">Блок питания БПВВ-1 (BP-220-02A)</span> предназначен для обеспечения электропитанием блоков управления БУВВ-1 (BU-220-05A) в эксплуатации с вакуумными выключателями ВВ/ТЕL-6(10). Является pin-to-pin заменой BP/TEL-220-02A. <br>
+										</div>
+										<div class="left-main-text">
 											Применяется в шкафах комплектных распределительных устройств внутренней и наружной установки (КРУ, КРУН). А также в камерах сборных одностороннего обслуживания (КСО) сети (6-10) кВ совместно с вакуумными выключателями ВВ/ТЕL-6(10).
 										</div>
 										<div class="left-main-buttons">
@@ -58,14 +63,32 @@
 												<a href="#" class="neworderBtn__text" target="_blank">ОТПРАВИТЬ ЗАЯВКУ</a>
 											</div>
 											<div class="documentsBtn">
-												<a href="#" class="documentsBtn__text" target="_blank">СКАЧАТЬ ДОКУМЕНТАЦИЮ</a>
+												<a href="/content/БПВВ РЭ+ДС.rar" class="documentsBtn__text" target="_blank">СКАЧАТЬ ДОКУМЕНТАЦИЮ</a>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="bpvv-main-flex-right">
 									<!--Сюда надо загнать фреймворк с каруселью фоток, последняя фотка должна быть чертежом. Временно засуну фотку-->
-									<img src="../img/demo_img.jpg" alt="" class="bpvv-main-flex-right-img">
+									<div class="f-carousel" id="myCarousel">
+										<div class="f-carousel__viewport">
+											<div class="f-carousel__slide" data-thumb-src="img/BPVV_photo/BPVV1.JPG">
+												<img data-lazy-src="img/BPVV_photo/BPVV1.JPG" width="471" height="706" alt="BPVV image #1" />
+											</div>
+											<div class="f-carousel__slide" data-thumb-src="img/BPVV_photo/BPVV2.JPG">
+												<img data-lazy-src="img/BPVV_photo/BPVV2.JPG" width="471" height="706" alt="BPVV image #2"/>
+											</div>
+											<div class="f-carousel__slide" data-thumb-src="img/BPVV_photo/BPVV3.JPG">
+												<img data-lazy-src="img/BPVV_photo/BPVV3.JPG" width="471" height="706" alt="BPVV image #3" />
+											</div>
+											<div class="f-carousel__slide" data-thumb-src="img/BPVV_photo/BPVV4.JPG">
+												<img data-lazy-src="img/BPVV_photo/BPVV4.JPG" width="471" height="706" alt="BPVV image #4" />
+											</div>
+											<div class="f-carousel__slide" data-thumb-src="img/BPVV_photo/BPVV5.JPG">
+												<img data-lazy-src="img/BPVV_photo/BPVV5.JPG" width="471" height="706" alt="BPVV image #5" />
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -74,6 +97,7 @@
 
 				<section class="whyBpvv">
 					<div class="_container">
+						<div class="whyBpvv-title">ПРЕИМУЩЕСТВА</div>
 						<div class="whyBpvv-flex">
 							<div class="whyBpvv-flex-left">
 								<div class="whyBpvv-flex-item itemWhyBpvv">
@@ -330,7 +354,19 @@
 		<script language="JavaScript" type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 		<!--Пробую вставить график. ПОТОМ НАДО ЗАМЕНИТЬ НА БИБЛИОТЕКИ ИЗ ЗАГРУЗКИ ЕСП-->
 		<script src="js/default.js"></script>
-		
+		<script src="js/carousel.umd.js"></script>
+		<script src="js/carousel.arrows.umd.js"></script>
+		<script src="js/carousel.lazyload.umd.js"></script>
+		<script src="js/carousel.thumbs.umd.js"></script>
+		<script>
+			Carousel(document.getElementById("myCarousel"), {
+				// Your custom options
+			}, {
+				
+				Lazyload,
+				Thumbs
+			}).init();
+    	</script>
 	</body>
 </html>	
 	
