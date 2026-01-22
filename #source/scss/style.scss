@@ -2202,9 +2202,7 @@ table.iksweb th {
 	}
 }
 
-.f-thumbs__viewport {
-	margin: 15px;
-}
+
 
 .bpvv {
 	--f-thumb-width: 50px;
@@ -2259,6 +2257,98 @@ table.iksweb th {
 	}
 }
 
+#myCarouselBUVV__adaptive {
+	--f-arrow-pos: 10px;
+	--f-arrow-width: 38px;
+	--f-arrow-height: 38px;
+	--f-arrow-svg-width: 16px;
+	--f-arrow-svg-height: 16px;
+	--f-arrow-svg-stroke-width: 2.5;
+	--f-arrow-color: #475569;
+	--f-arrow-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+	--f-arrow-border-radius: 50%;
+	--f-arrow-bg: #fff;
+	--f-arrow-hover-bg: #f9f9f9;
+	--f-arrow-active-bg: #f0f0f0;
+	--f-thumb-width: 50px;
+	
+	@media (max-width:992px) {
+		padding-top: 70px;
+	}
+
+	@media (max-width: 773px) {
+		padding-top: 65px;
+	}
+
+	@media (max-width: 560px) {
+		padding-top: 30px;
+	}
+}
+
+#myCarouselBUVV__adaptive .f-carousel__slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#myCarouselBUVV__adaptive .f-carousel__slide img {
+	max-width: 100%;
+	height: auto;
+	@media (max-width:1182px) {
+		max-width: 400px;
+	}
+	@media (max-width:992px) {
+		max-width: 100%;
+	}
+}
+
+#myCarouselBUVV__fullscreen {
+	--f-arrow-pos: 10px;
+	--f-arrow-width: 38px;
+	--f-arrow-height: 38px;
+	--f-arrow-svg-width: 16px;
+	--f-arrow-svg-height: 16px;
+	--f-arrow-svg-stroke-width: 2.5;
+	--f-arrow-color: #475569;
+	--f-arrow-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+	--f-arrow-border-radius: 50%;
+	--f-arrow-bg: #fff;
+	--f-arrow-hover-bg: #f9f9f9;
+	--f-arrow-active-bg: #f0f0f0;
+	--f-thumb-width: 50px;
+	
+	@media (max-width:992px) {
+		padding-top: 70px;
+	}
+
+	@media (max-width: 773px) {
+		padding-top: 65px;
+	}
+
+	@media (max-width: 560px) {
+		padding-top: 30px;
+	}
+}
+
+#myCarouselBUVV__fullscreen .f-carousel__slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#myCarouselBUVV__fullscreen .f-carousel__slide img {
+	max-width: 100%;
+	height: auto;
+	@media (max-width:1182px) {
+		max-width: 400px;
+	}
+	@media (max-width:992px) {
+		max-width: 100%;
+	}
+}
+
 .burger__list {
 	line-height: 330%;
 }
@@ -2273,4 +2363,8 @@ table.iksweb th {
 	@media (max-width: 773px) {
 		display: none;
 	}
+}
+
+.f-thumbs__viewport {
+	margin: 15px;
 }
