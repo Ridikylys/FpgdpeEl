@@ -457,6 +457,12 @@ body {
     display: none;
   }
 }
+@media (max-width: 560px) {
+  .orderBtn__text {
+    width: 100%;
+    font-size: 15px;
+  }
+}
 .orderBtn__text {
   display: inline-block;
   border: 1px solid black;
@@ -471,12 +477,6 @@ body {
   background: radial-gradient(113.41% 117.29% at -13.39% 80%, #fff 0%, #b69e5e 100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-@media (max-width: 560px) {
-  .orderBtn__text {
-    width: 100%;
-    font-size: 15px;
-  }
 }
 .orderBtn__text:hover {
   -webkit-transition: all 0.5s ease;
@@ -2136,9 +2136,6 @@ body {
   }
 }
 
-.whyBpvv {
-  background: #222436;
-}
 .whyBpvv-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -2163,6 +2160,9 @@ body {
   .whyBpvv-title {
     margin-top: 30px;
   }
+}
+.whyBpvv {
+  background: #222436;
 }
 .whyBpvv-flex {
   display: -webkit-box;
