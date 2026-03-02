@@ -1276,7 +1276,7 @@ body {
 		}
 	}
 
-	&-BPVV {
+	&-BPVV, &-BUVV {
 
 		&-link {
 			display: contents;
@@ -1844,7 +1844,7 @@ body {
 	}
 
 	&-main {
-		padding-top: 90px;
+		padding-top: 75px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -1961,15 +1961,18 @@ body {
 	}
 
 	&-right {
-		
-		margin-right: 165px;
+		display: flex;
+    	width: 250px;
+		//margin-right: 165px;
 		@media (max-width:992px) {
 			margin-right: 0px;
+			width: auto;
 		}
 		@media (max-width: 560px) {
 			width: 97%;
 		}
 		&-btn {
+			margin: 0 auto;
 			@media (max-width:992px) {
 				display: block;
 			}

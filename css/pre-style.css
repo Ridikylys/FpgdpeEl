@@ -1488,7 +1488,7 @@ body {
   line-height: normal;
   text-align: center;
 }
-.cardsReady-BPVV-link {
+.cardsReady-BPVV-link, .cardsReady-BUVV-link {
   display: contents;
 }
 
@@ -2043,7 +2043,7 @@ body {
   }
 }
 .footer-main {
-  padding-top: 90px;
+  padding-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2207,17 +2207,24 @@ body {
   letter-spacing: 1px;
 }
 .footer-right {
-  margin-right: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
 }
 @media (max-width: 992px) {
   .footer-right {
     margin-right: 0px;
+    width: auto;
   }
 }
 @media (max-width: 560px) {
   .footer-right {
     width: 97%;
   }
+}
+.footer-right-btn {
+  margin: 0 auto;
 }
 @media (max-width: 992px) {
   .footer-right-btn {
