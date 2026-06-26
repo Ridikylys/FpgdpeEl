@@ -10,6 +10,27 @@
 	
 	<body>
 		<!--Оболочка всей страницы-->
+		<!-- Затемнение -->
+		<div class="overlay" id="overlay"></div>
+
+		<!-- Попап -->
+		<div class="popup" id="popup">
+			<!-- Твоя картинка котика -->		
+			<h2>Мы не собираем персональные данные</h2>
+			<p class="popup__about">Мы честно пытались прочитать ФЗ-152, но уснули на второй странице. Чтобы не злить Роскомнадзор и крепко спать, мы просто не собираем ваши данные.</p>
+			<p class="popup__about popup__letsDoIt"><strong>Напишите или позвоните нам</strong></p>
+			<div class="contacts">
+				<div class="footer-center-phone contacts__phone">
+					<a href="tel:+79119688528" class="footer-center-phone">+7 (911) 968-85-28</a>
+				</div>
+				
+				<div class="footer-center-mail">
+					<a href="mailto:bvi@fpgdpe.ru?subject=Запрос из сайта" class="footer-center-mail">BVI@FPGDPE.RU</a>
+				</div>
+			</div>
+			<button class="btn-close" onclick="closePopup()">[Тсс, не будите админа]</button>
+			<img src="img/FZ152-4.png" alt="Котик" class="cat-image">
+		</div>
 		<!--Используется как флекс-контейнер, чтобы разнести футер и контент-->
 		<div class="wrapper">
 			<main class="page">
@@ -283,12 +304,12 @@
 									</div>
 									<div class="ruProduct-left-title">НАШЕ ОБОРУДОВАНИЕ ПРОИЗВОДИТСЯ В РОССИИ</div>
 									
-									<div class="ruProduct-left-subtitle">Мы гордимся тем, что все наши продукты созданы на отечественных мощностях. Это гарантирует высокие стандарты качества и поддержку местной экономики.</div>
+									<div class="ruProduct-left-subtitle">Мы гордимся тем, что все наши продукты созданы на отечественных мощностях. Это гарантирует высокие стандарты качества и поддерживает местную экономику.</div>
 									<div class="ruProduct-left-double">
 										<img src="img/ru_product.png" alt="" class="ruProduct-right-img">
 									</div>
 									<div class="header__menu-orderBtn orderBtn ruProduct-left-btn">
-										<a href="#" class="orderBtn__text" target="_blank">ОСТАВИТЬ ЗАЯВКУ</a>
+										<a href="#" class="orderBtn__text">ОСТАВИТЬ ЗАЯВКУ</a>
 									</div>
 								</div>
 								<div class="ruProduct-right">
@@ -340,7 +361,7 @@
 								</div>
 								<div class="footer-right">
 									<div class="header__menu-orderBtn orderBtn footer-right-btn">
-										<a href="#" class="orderBtn__text" target="_blank">ОСТАВИТЬ ЗАЯВКУ</a>
+										<a href="#" class="orderBtn__text">ОСТАВИТЬ ЗАЯВКУ</a>
 									</div>
 								</div>
 							</div>
@@ -352,6 +373,7 @@
 		<script language="JavaScript" type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 		<!--Пробую вставить график. ПОТОМ НАДО ЗАМЕНИТЬ НА БИБЛИОТЕКИ ИЗ ЗАГРУЗКИ ЕСП-->
 		<script src="js/default.js"></script>
+		<script src="js/index.js"></script>
 		
 	</body>
 </html>	

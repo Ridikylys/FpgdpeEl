@@ -12,6 +12,30 @@
 	</head>
 	
 	<body>
+
+		<!-- Затемнение -->
+		<div class="overlay" id="overlay"></div>
+
+		<!-- Попап -->
+		<div class="popup" id="popup">
+			<!-- Твоя картинка котика -->
+			
+			
+			<h2>Мы не собираем персональные данные</h2>
+			<p class="popup__about">Мы честно пытались прочитать ФЗ-152, но уснули на второй странице. Чтобы не злить Роскомнадзор и крепко спать, мы просто не собираем ваши данные.</p>
+			<p class="popup__about popup__letsDoIt"><strong>Напишите или позвоните нам</strong></p>
+			<div class="contacts">
+				<div class="footer-center-phone contacts__phone">
+					<a href="tel:+79119688528" class="footer-center-phone">+7 (911) 968-85-28</a>
+				</div>
+				
+				<div class="footer-center-mail">
+					<a href="mailto:bvi@fpgdpe.ru?subject=Запрос из сайта" class="footer-center-mail">BVI@FPGDPE.RU</a>
+				</div>
+			</div>
+			<button class="btn-close" onclick="closePopup()">[Тсс, не будите админа]</button>
+			<img src="img/FZ152-4.png" alt="Котик" class="cat-image">
+		</div>
 		<!--Оболочка всей страницы-->
 		<!--Используется как флекс-контейнер, чтобы разнести футер и контент-->
 		<div class="wrapper">
@@ -29,11 +53,11 @@
 								</div>
 								<div class="menu__body">
 									<ul class="menu__list">
-										<li><a href="index.html" class="menu__link burger__list">ГЛАВНАЯ</a></li>
-										<li><a href="eventlog.html" class="menu__link burger__list">О КОМПАНИИ</a></li>
-										<li><a href="history.html" class="menu__link menu__link-active burger__list">ПРОДУКЦИЯ И УСЛУГИ</a></li>
-										<li><a href="diagnostics.html" class="menu__link burger__list">НАШИ ПРЕИМУЩЕСТВА</a></li>
-										<li><a href="support.html" class="menu__link burger__list">КОНТАКТЫ</a></li>
+										<li><a href="index.html" class="menu__link">ГЛАВНАЯ</a></li>
+										<li><a href="eventlog.html" class="menu__link">О КОМПАНИИ</a></li>
+										<li><a href="history.html" class="menu__link menu__link-active">ПРОДУКЦИЯ</a></li>
+										<li><a href="diagnostics.html" class="menu__link">ПРЕИМУЩЕСТВА</a></li>
+										<li><a href="support.html" class="menu__link">КОНТАКТЫ</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -75,17 +99,14 @@
 											</div>
 										</div>
 										<div class="left-main-text">
-											<span class="left-main-text-start">Блок питания БПВВ-1 (BP-220-02A)</span> — надежное решение для обеспечения стабильного электропитания блоков управления БУВВ-1 (BU-220-05A) в системах с вакуумными выключателями 
-											ВВ/ТЕL-6(10).<br>
+											<span class="left-main-text-start">Блок питания БПВВ-1 (BP-220-02A)</span> предназначен для обеспечения электропитанием блоков управления БУВВ-1 (BU-220-05A) в эксплуатации с вакуумными выключателями ВВ/ТЕL-6(10). Является pin-to-pin заменой BP/TEL-220-02A. <br>
 										</div>
 										<div class="left-main-text">
-											Это оборудование разработано как прямая pin-to-pin замена для устаревшей модели BP/TEL-220-02A, что гарантирует быструю и беспроблемную интеграцию без необходимости модификации существующей схемы.
-
-
+											Применяется в шкафах комплектных распределительных устройств внутренней и наружной установки (КРУ, КРУН). А также в камерах сборных одностороннего обслуживания (КСО) сети (6-10) кВ совместно с вакуумными выключателями ВВ/ТЕL-6(10).
 										</div>
 										<div class="left-main-buttons">
 											<div class="neworderBtn">
-												<a href="#" class="neworderBtn__text" target="_blank">ОТПРАВИТЬ ЗАЯВКУ</a>
+												<a href="#" class="neworderBtn__text">ОТПРАВИТЬ ЗАЯВКУ</a>
 											</div>
 											<div class="documentsBtn">
 												<a href="/content/БПВВ РЭ+ДС.rar" class="documentsBtn__text" target="_blank">СКАЧАТЬ ДОКУМЕНТАЦИЮ</a>
@@ -131,9 +152,7 @@
 										<h2 class="itemWhyBpvv-main-title">УМЕНЬШЕННЫЙ НАГРЕВ</h2>
 									</div>
 									<div class="itemWhyBpvv-text">
-										Снижение рабочей температуры на 15°C значительно увеличивает срок службы устройства и гарантирует максимальную надежность работы всей системы 
-										<br class="if773"> 
-										<br class="if773"> 
+										Сокращен нагрев блока на 15°C, что увеличивает срок службы устройства и обеспечивает более надежную работу
 									</div>
 								</div>
 								<div class="whyBpvv-flex-item itemWhyBpvv">
@@ -142,9 +161,7 @@
 										<h2 class="itemWhyBpvv-main-title">СТАБИЛЬНОЕ НАПРЯЖЕНИЕ</h2>
 									</div>
 									<div class="itemWhyBpvv-text">
-										Точное выходное напряжение 230 В (± 5 В) гарантирует бесперебойную и стабильную работу ваших блоков управления, предотвращая их выход из строя
-										<br class="if773">
-										<br class="if1182px if773">
+										Выходное напряжение составляет 230 ± 5 В, что обеспечивает стабильную работу блоков управления
 									</div>
 								</div>
 								<div class="whyBpvv-flex-item itemWhyBpvv">
@@ -164,16 +181,16 @@
 										<h2 class="itemWhyBpvv-main-title">ШИРОКИЙ ДИАПАЗОН НАПРЯЖЕНИЯ</h2>
 									</div>
 									<div class="itemWhyBpvv-text">
-										Широкий диапазон входного напряжения (11 – 30 В) от вспомогательного источника питания обеспечивает гибкость интеграции и совместимость с различными типами электросетей
+										Напряжение от вспомогательного источника питания составляет 11 - 30 В, что обеспечивает гибкость в использовании
 									</div>
 								</div>
 								<div class="whyBpvv-flex-item itemWhyBpvv">
 									<div class="itemWhyBpvv-main">
 										<img src="../img/HarryPotter.svg" alt="" class="itemWhyBpvv-main-img">
-										<h2 class="itemWhyBpvv-main-title">ВЫСОКАЯ ОТКАЗОУСТОЙЧИВОСТЬ</h2>
+										<h2 class="itemWhyBpvv-main-title">НЕПРЕРЫВНОСТЬ</h2>
 									</div>
 									<div class="itemWhyBpvv-text">
-										Отсутствие необходимости в паузах при частых циклах включения/отключения блока значительно ускоряет процесс работы и повышает общую эффективность системы
+										При частом включении/отключении БП не требуется делать паузу, что ускоряет процесс работы
 									</div>
 								</div>
 								<div class="whyBpvv-flex-item itemWhyBpvv">
@@ -374,7 +391,7 @@
 								</div>
 								<div class="footer-right bpvv_btn">
 									<div class="header__menu-orderBtn orderBtn footer-right-btn">
-										<a href="#" class="orderBtn__text" target="_blank">ОТПРАВИТЬ ЗАЯВКУ</a>
+										<a href="#" class="orderBtn__text">ОТПРАВИТЬ ЗАЯВКУ</a>
 									</div>
 								</div>
 							</div>
@@ -386,6 +403,7 @@
 		<script language="JavaScript" type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 		<!--Пробую вставить график. ПОТОМ НАДО ЗАМЕНИТЬ НА БИБЛИОТЕКИ ИЗ ЗАГРУЗКИ ЕСП-->
 		<script src="js/default.js"></script>
+		<script src="js/index.js"></script>
 		<script src="js/carousel.umd.js"></script>
 		<script src="js/carousel.arrows.umd.js"></script>
 		<script src="js/carousel.lazyload.umd.js"></script>
