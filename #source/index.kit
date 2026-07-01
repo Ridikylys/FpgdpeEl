@@ -25,10 +25,10 @@
 				</div>
 				
 				<div class="footer-center-mail">
-					<a href="mailto:bvi@fpgdpe.ru?subject=Запрос из сайта" class="footer-center-mail">BVI@FPGDPE.RU</a>
+					<a href="mailto:manager@ppdzva.ru?subject=Запрос из сайта" class="footer-center-mail">MANAGER@PPDZVA.RU</a>
 				</div>
 			</div>
-			<button class="btn-close" onclick="closePopup()">[Тсс, не будите админа]</button>
+			<button class="btn-close" onclick="closePopup()">Хорошо</button>
 			<img src="img/FZ152-4.png" alt="Котик" class="cat-image">
 		</div>
 		<!--Используется как флекс-контейнер, чтобы разнести футер и контент-->
@@ -45,7 +45,8 @@
 						<div class="_container _container-main">
 							<div class="main-screen-content">
 								<div class="main-screen-content__logo">
-									<img src="img/site_logo_big.svg" alt="">
+									<!-- <img src="img/site_logo_big_dzva.png" alt=""> -->
+								<img src="img/site_logo_big.svg" alt="">
 									<div class="main-screen-content__logo-first-line">
 										<img src="img/main_line_big.svg" alt="">
 									</div>
@@ -59,14 +60,14 @@
 									</div>
 								</div>
 								<div class="main-screen-content__img">
-									<img src="../img/IMG_0687.png" alt="" class="main-screen-content__img-img">
+									<img src="img/IMG_0687.png" alt="" class="main-screen-content__img-img">
 								</div>
 							</div>
 						</div>
 				</section>
 
 				<!--БЛОК О ФПГ-->
-				<section class="about-fpg">
+				<section class="about-fpg" id="about">
 					<div class="smallWidth__title">О КОМПАНИИ ДОНПРОМЭНЕРГО</div>
 					<div class="mobileWidth">
 						<div class="mobileWidth__titleBlock">
@@ -163,7 +164,7 @@
 					</div>
 					<div class="_container">
 						<div class="readyAndTry-main">
-							<div class="readyAndTry-main-readyProduct readyProduct">
+							<div class="readyAndTry-main-readyProduct readyProduct" id="product">
 								<div class="readyProduct-title">
 									<h1 class="title-readyProduct">ГОТОВАЯ ПРОДУКЦИЯ</h1>
 								</div>
@@ -173,7 +174,7 @@
 								<div class="readyProduct-cards">
 									
 									<div class="cardsReady-RS80 cardsReady">
-										<img src="../img/IMG_0464.png" alt="" class="cardsReady-img-RS80">
+										<img src="img/IMG_0464.png" alt="" class="cardsReady-img-RS80">
 										
 										<div class="cardsReady-name">
 											<p class="cardsReady-name-RS80">РС-80</p>
@@ -181,7 +182,7 @@
 									</div>
 									<a href="../BPVV.html" class="cardsReady-BPVV-link">
 										<div class="cardsReady-BPVV cardsReady">
-												<img src="../img/IMG_0260.png" alt="" class="cardsReady-img-BPVV">
+												<img src="img/IMG_0260.png" alt="" class="cardsReady-img-BPVV">
 											<div class="cardsReady-name">
 												<p class="cardsReady-name-BPVV">БПВВ-1&nbsp;<br class="cardsReady-ifnone">(ВР-220-02A)</p>
 											</div>
@@ -189,7 +190,7 @@
 									</a>
 									<a href="../BUVV.html" class="cardsReady-BUVV-link">
 										<div class="cardsReady-BUVV cardsReady">
-											<img src="../img/IMG_0159.png" alt="" class="cardsReady-img-BUVV">
+											<img src="img/IMG_0159.png" alt="" class="cardsReady-img-BUVV">
 											<div class="cardsReady-name">
 												<p class="cardsReady-name-BUVV">БУВВ-1&nbsp;<br class="cardsReady-ifnone">(ВU-220-05A)</p>
 											</div>
@@ -197,7 +198,7 @@
 									</a>	
 									<div class="cardsReady-digmat cardsReady">
 										
-											<img src="../img/IMG_0502.png" alt="" class="cardsReady-img-digmat">
+											<img src="img/IMG_0502.png" alt="" class="cardsReady-img-digmat">
 										
 										<div class="cardsReady-name">
 											<p class="cardsReady-name-digmat">ДИГМАТ</p>
@@ -260,7 +261,7 @@
 				</section>
 				
 				<!--БЛОК ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ-->
-				<section class="advantages">
+				<section class="advantages" id="advantages">
 					<div class="advantages-bg">
 						<div class="_container advantages_container">
 							<div class="advantages-title">
@@ -321,18 +322,18 @@
 				</section>
 
 				<!--Верстаем футер-->
-				<footer class="footer">
+				<footer class="footer" id="contacts">
 					<div class="footer-bg">
 						<div class="_container">
 							<div class="footer-main">
 								<div class="footer-left">
 									<div class="footer-left-body">
 										<ul class="footer-left-body-list">
-											<li><a href="index.html" class="menu__link menu__link-active">ГЛАВНАЯ</a></li>
-											<li><a href="eventlog.html" class="menu__link">О КОМПАНИИ</a></li>
-											<li><a href="history.html" class="menu__link">ПРОДУКЦИЯ И УСЛУГИ</a></li>
-											<li><a href="diagnostics.html" class="menu__link">НАШИ ПРЕИМУЩЕСТВА</a></li>
-											<li><a href="support.html" class="menu__link">КОНТАКТЫ</a></li>
+											<li><a href="#main" class="menu__link">ГЛАВНАЯ</a></li>
+											<li><a href="#about" class="menu__link">О КОМПАНИИ</a></li>
+											<li><a href="#product" class="menu__link">ПРОДУКЦИЯ</a></li>
+											<li><a href="#advantages" class="menu__link">НАШИ ПРЕИМУЩЕСТВА</a></li>
+											<li><a href="#" class="menu__link  menu__link-active">КОНТАКТЫ</a></li>
 										</ul>
 									</div>
 								</div>
@@ -340,23 +341,26 @@
 									<div class="footer-center-title">
 										КОНТАКТНАЯ ИНФОРМАЦИЯ
 									</div>
+									<div class="footer-center-name">
+										ООО "ПП "ДЗВА"
+									</div>
 									<div class="footer-center-phone">
 										<a href="tel:+79119688528" class="footer-center-phone">+7 (911) 968-85-28</a>
 
 									</div>
 									<div class="footer-center-icons">
 										<a href="tel:+79119688528">
-											<img src="../img/phone.svg" alt="phone">
+											<img src="img/phone.svg" alt="phone">
 										</a>
 										<a href="tg://resolve?domain=Ligilement">
-											<img src="../img/telegram.svg" alt="telegram">
+											<img src="img/telegram.svg" alt="telegram">
 										</a>
 										<a href="https://wa.me/79119688528">
-											<img src="../img/whatsapp.svg" alt="whatsapp">
+											<img src="img/whatsapp.svg" alt="whatsapp">
 										</a>
 									</div>
 									<div class="footer-center-mail">
-										<a href="mailto:bvi@fpgdpe.ru?subject=Запрос из сайта" class="footer-center-mail">BVI@FPGDPE.RU</a>
+										<a href="mailto:manager@ppdzva.ru?subject=Запрос из сайта" class="footer-center-mail">MANAGER@PPDZVA.RU</a>
 									</div>
 								</div>
 								<div class="footer-right">
@@ -374,7 +378,6 @@
 		<!--Пробую вставить график. ПОТОМ НАДО ЗАМЕНИТЬ НА БИБЛИОТЕКИ ИЗ ЗАГРУЗКИ ЕСП-->
 		<script src="js/default.js"></script>
 		<script src="js/index.js"></script>
-		
 	</body>
 </html>	
 	
